@@ -1,0 +1,125 @@
+/* General body styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 100px;
+    background-color: white;
+    color: black;
+    text-align: center; /* Center align all text */
+}
+
+h1 {
+    font-weight: normal; /* This will make <h1> not bold */
+    font-size: 30px;
+}
+
+h2 {
+    font-weight: normal; /* This will make <h1> not bold */
+    font-size: 22px;
+}
+
+hr {
+    border-top: 0px solid transparent; /* Makes the top border invisible */
+    border-bottom: 0px solid transparent; /* Makes the bottom border invisible */
+    color: transparent; /* Makes the line transparent */
+    background-color: transparent; /* Ensures the background is transparent */
+    height: 2px; /* Controls the space it occupies */
+}
+
+This CSS:
+
+
+/* Header styles */
+header {
+    padding: 1em 0;
+    padding-bottom: 0;
+}
+
+/* Navigation menu styles */
+nav {
+    padding: 0.5em 0;
+}
+
+nav a {
+    color: black;
+    text-decoration: underline;
+    padding: 0.5em 1em;
+}
+
+nav a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Style for links */
+a {
+    text-decoration: none; /* underline, Links are underlined by default */
+    color: #0077CC; /* Sets the text color */
+    /* Other styles for your links */
+}
+
+/* Style for links on hover */
+a:hover {
+    text-decoration: underline; /* none: Removes the underline on hover; underline  Adds underline on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 1em;
+    padding-top: 0;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 2
+}
+
+/* Footer styles */
+footer {
+    padding: 1em 0;
+}
+
+img.circle {
+    border-radius: 50%; /* Creates a circle */
+    max-width: 200px; /* Maximum width */
+    min-width: 200px; /* Minimum width */
+    width: 100px; /* Set the width as needed */
+    height: auto; /* Set the height to the same value as width for a perfect circle */
+}
+
+@media all and (max-width: 600px) {
+    body {
+        padding-top: 50px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    main {
+        font-size: 22px;
+    }
+}
+
+.contact-links {
+    display: flex; /* Hiển thị các biểu tượng trên cùng một hàng */
+    justify-content: center; /* Căn giữa các biểu tượng */
+    gap: 1em; /* Khoảng cách giữa các biểu tượng */
+    margin-top: 1em; /* Khoảng cách giữa tên và biểu tượng */
+}
+
+.contact-links a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    color: #333; /* Màu biểu tượng */
+    font-size: 1.5em; /* Kích thước biểu tượng */
+    transition: color 0.3s ease; /* Hiệu ứng chuyển màu khi hover */
+}
+
+.contact-links a:hover {
+    color: #0073e6; /* Đổi màu biểu tượng khi hover */
+}
+
+ol {
+    list-style-position: outside; /* Ensures the dot stays outside */
+    padding-left: 20px; /* Adds spacing between the dot and the text */
+}
+li {
+    text-indent: -20px; /* Aligns text with the first line */
+    margin-left: 20px; /* Adds spacing between the dot and the text */
+}
